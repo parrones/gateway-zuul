@@ -1,0 +1,15 @@
+zuul:
+  routes:
+    books:
+      path: /books/**
+      url: http://localhost:8090
+  host:
+    connect-timeout-millis: 10000
+    socket-timeout-millis: 60000
+      
+ribbon:
+  eureka:
+    enabled: false
+    
+server:
+  port: 8080
